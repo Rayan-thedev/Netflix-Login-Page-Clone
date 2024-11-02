@@ -1,0 +1,1034 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue" ,Arial , sans-sarif ;
+    
+}
+
+
+.background-cover {
+    background-image: url(images/Netflix-Background.jpg);
+    max-width: 100%;
+    height: 822px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.background-cover-dark-Shade {
+    background-color: rgba(0, 0, 0, 0.686);
+    height: 100%;
+}
+
+.navbar {
+    height: 90px;
+    position: absolute;
+    top: 0%;
+    width: 75%;
+    left: 11.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    background-image: url(images/logo.png);
+    height: 48px;
+    width: 148px;
+    background-position: center;
+    background-size: cover;
+}
+
+#btn-sign-in {
+    border: none;
+    height: 35px;
+    width: 80px;
+    border-radius: 6px;
+    background-color: rgb(225, 0, 0);
+    color: white;
+    font-weight: 700;
+}
+
+/* central components */
+.central-container {
+
+    position: absolute;
+    top: 245px;
+    width: 100%;
+    height: fit-content;
+}
+
+
+.central-components {
+
+    height: 240px;
+    width: 49.65%;
+    margin-right: auto;
+    top: 30%;
+    margin-left: auto;
+    display: grid;
+    justify-content: space-around;
+}
+
+.central-components>* {
+    color: white;
+    text-align: center;
+}
+
+#main-heading {
+    font-size: 65px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#discription {
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.sub-container-input {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#email-input {
+    height: 60px;
+    width: 390px;
+    border: 1px solid rgba(255, 255, 255, 0.388);
+    background: #000;
+    opacity: 0.8;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#email-input::placeholder {
+    color: white;
+    padding-left: 12px;
+}
+
+#btn-get-started {
+    height: 60px;
+    width: 200px;
+    font-size: 23px;
+    color: white;
+    background-color: #E10000;
+    border-radius: 5px;
+    border: none;
+    margin-left: 5px;
+    font-weight: 700;
+
+}
+
+
+/* only to maintain styling / not responsiveness*/
+
+@media only screen and (max-device-width:1280px) {
+    .central-components {
+        width: 62%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* section 2 */
+
+
+
+
+
+
+
+.curved-line {
+    background-color: black;
+    top: -80px;
+
+    height: 80px;
+    width: 100%;
+
+
+    background: linear-gradient(to right,
+            rgba(33, 13, 22, 1) 16%,
+            rgba(184, 40, 105, 1),
+            rgba(229, 9, 20, 1),
+            rgba(184, 40, 105, 1),
+            rgba(33, 13, 22, 1) 84%);
+
+    clip-path: ellipse(52% 30% at 50% 100%);
+    position: relative;
+
+}
+
+
+.curved-line2 {
+    background-color: black;
+    top: -150px;
+
+    height: 350px;
+    width: 100%;
+
+    background-color: black;
+    clip-path: ellipse(155% 85.6% at 50% 100%);
+    position: relative;
+
+}
+
+.curved-line2::before {
+    content: '';
+
+    box-shadow: 600px -320px 200px 290px rgb(55, 108, 255);
+
+}
+
+.dark-background {
+    position: absolute;
+
+    background-color: black;
+    height: 2150px;
+    width: 100%;
+
+}
+
+
+
+
+/* section 2 container and its components */
+#section2-container {
+  
+    position: relative;
+    top: -410px;
+    height: 2100px;
+}
+
+/* dropdowns */
+
+#dropdown-container {
+ 
+    height: fit-content;
+    top: -400px;
+    width: 78%;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+#dropdown-container>* {
+    color: white;
+  
+}
+
+#trend-container {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 13px;
+    font-size: 13px;
+    padding-left: 0%;
+  
+    
+}
+
+#drops {
+
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+ 
+}
+
+.dropdowns {
+    height: 40px;
+    width: 110px;
+    border-radius: 3px;
+    font-weight: 200;
+    background-color: rgba(44, 43, 43, 0.283);
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* carousal of section2  listing top 10 movies*/
+.carousal-container {
+
+    max-width: 80%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.carousal-inner {
+
+    width: 230%;
+    display: flex;
+    justify-content: space-between;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousal-item {
+    height: 250px;
+    width: 180px;
+    background-repeat: no-repeat;
+    margin: 10px;
+}
+
+
+
+.carousal-item>* {
+    height: 250px;
+    width: 180px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    transition: 0.2s, 0.2s;
+}
+
+
+
+
+.carousal-item>*:hover {
+    height: 260px;
+    width: 185px;
+    transition: 0.2s ease;
+    position: absolute;
+
+}
+
+
+
+/* carousal btns */
+
+.carousal-btn-container {
+
+    height: 259px;
+    width: 170px;
+    color: rgb(219, 215, 215);
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+}
+
+.sub-carousal-btn-container {
+
+    height: 50%;
+    width: 15%;
+    background-color: rgba(36, 34, 34, 0.808);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: default;
+
+
+}
+
+.sub-carousal-btn-container:hover {
+    background-color: rgba(95, 94, 94, 0.459);
+    transition: 0.1s ease;
+
+}
+
+.prev-positioning {
+    position: relative;
+    top: -260px;
+
+    display: flex;
+    justify-content: end;
+}
+
+.next-positioning {
+    position: relative;
+    margin-left: auto;
+    top: -519px;
+
+}
+
+/* section 2 cards / reasons to join netflix */
+
+.card-container {
+
+    width: 80%;
+    height: 390px;
+    position: relative;
+    top: -480px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+#card-heading {
+
+    font-size: 25px;
+    padding: 9px;
+    height: 15%;
+    font-weight: 100;
+}
+
+.card-sub-container {
+
+    height: 85%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards {
+
+    height: 100%;
+    width: 23%;
+    border-radius: 15px;
+    background: linear-gradient(149deg, #192247 0%, #210e17 99.08%);
+}
+
+.card-h{
+   
+    height: 220px;
+    
+}
+
+.cards-heading {
+    padding-top: 20px;
+    padding-left: 15px;
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+
+
+
+
+
+.cards p {
+    padding-left: 15px;
+    
+    padding-right: 15px;
+    color: rgba(255, 255, 255, 0.7);
+
+} 
+
+.card-icon {
+    
+    height: 100px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding-right: 10px;
+    
+ 
+}
+
+
+
+/*  accordian*/
+
+
+.accordian-heading {
+    color: white;
+    padding-left: 15px;
+    font-size: 25px;
+}
+
+
+.accordian {
+    position: relative;
+    bottom: 420px;
+    color: black;
+    width: 83%;
+    margin: auto;
+}
+
+.contentbox {
+    margin: 15px;
+    background-color: rgb(45, 45, 45);
+  
+    cursor: pointer;
+}
+
+.contentbox:hover {
+    background-color: rgb(67, 65, 65);
+    transition: 0.4s ease;
+}
+
+
+
+.label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    color: white;
+}
+
+.label i {
+    font-size: 50px;
+    font-weight:300;
+}
+
+
+
+.content {
+
+    color: white;
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+    font-size: 20px;
+
+
+}
+
+.active .content {
+    height: auto;
+    padding: 10px;
+}
+
+.active .label .accordian-icon1 {
+    display: none;
+}
+
+.accordian-icon2 {
+    display: none;
+}
+
+.active .label .accordian-icon2 {
+    display: block;
+}
+
+
+
+
+
+
+
+/* footer input section */
+.footer-input-container{
+
+    margin-top: 80px;
+   
+}
+
+.footer-discription{
+    color: white;
+    padding: 15px;
+    display: grid;
+    justify-content: center;
+    
+}
+
+.footer-input-sub-container{
+
+    display: flex;
+    justify-content: center;
+}
+
+.footer-input-sub-container #email-input{
+    width: 55%;
+
+}
+ 
+
+/* adjusting footer position */
+footer{
+   
+    position: relative;
+    bottom: 400px;
+    height: 400px;
+}
+
+
+
+/* quick links */
+.quick-links{
+
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    display: grid;
+}
+
+.contact-us{
+    display: flex;
+    align-items: center;
+    
+    height: 70px;
+}
+.contact-us a{
+    color: rgb(193, 184, 184);
+
+}
+
+.quick-links-box-container{
+
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quick-links-box{
+   
+    height: 100%;
+    width: 25%;
+    display: grid;
+}
+
+.quick-links-box a{
+    color: rgb(193, 184, 184);
+    font-size: 0.94rem;
+}
+
+
+.signature{
+   padding: 10px;
+   padding-left: 0px;
+   color: rgb(193, 184, 184);
+}
+
+
+
+
+/* adding responsiveness */
+
+
+
+/* first breakpoint  */
+
+@media only screen and (max-device-width:986px) {
+
+    .background-cover {
+        max-width: 100%;
+        height: 622px;
+    }
+
+    .navbar {
+       width: 96%;
+        left: 2%;     
+    }
+
+    #logo {
+        height: 35px;
+        width: 112px;
+    }
+
+    .central-container {   
+      top: 20%;     
+    }
+
+    .central-components {
+        height: 150px;
+        width: 43%;
+    }
+
+    @media only screen and (max-device-width:822px) {
+        .central-components {
+            height: 150px;
+            width: 52%;
+        }
+    }
+
+    #main-heading {
+        font-size: 35px;
+    }
+
+
+    #sub-heading {
+        font-size: 15px;
+    }
+
+    #discription {
+        font-size: 15px;
+    }
+
+    #email-input {
+         width: 260px;
+    }
+
+
+/* above code is for hero section  / section 1  / breakpoint 1*/
+
+/* below code is for section2   / breakpoint 1*/
+
+/* dropdowns */
+#dropdown-container {
+    width: 90%;
+}
+
+#trend-container {
+    padding: 3px;
+    font-size: 8px;
+}
+
+
+#drops {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdowns {
+    height: 40px;
+   width: AUTO; 
+    margin-top: 10px;
+}
+
+
+
+
+
+/* carousal of section2  listing top 10 movies / breakpoint 1*/
+.carousal-container {
+    height: fit-content;
+    max-width:90%;
+}
+
+.carousal-inner 
+{
+    height: fit-content;
+    width: 130%;
+       
+}
+
+
+.carousal-item {
+    height: auto;
+}
+
+
+
+.carousal-item>* {
+    height: 180px;
+    width: 120px;
+}
+
+
+
+
+
+
+/* carousal btns / breakpoint 1 */
+
+.carousal-btn-container {
+   height: 200px;
+    width: 100px;
+    color: rgb(219, 215, 215);
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+
+}
+
+.sub-carousal-btn-container {
+    height: 60%;
+    width: 30%;
+}
+
+
+.prev-positioning {
+    position: relative;
+    top: -200px;
+}
+
+.next-positioning {
+    position: relative;
+    top: -400px;
+}
+
+
+
+
+
+
+
+
+/* section 2 cards / reasons to join netflix  / breakpoint 1*/
+
+.card-container {
+
+    width: 90%;
+    position: relative;
+    top: -380px;
+  
+}
+
+
+.card-sub-container {
+
+    height: 85%;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+
+.cards {
+
+    height: 95%;
+    width: 98%;
+    border-radius: 15px;
+    background: linear-gradient(149deg, #192247 0%, #210e17 99.08%);
+}
+
+.card-h{
+    
+    height: 120px;
+    
+}
+
+.cards-heading {
+    padding-top: 10px;
+    padding-left: 15px;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+.cards p {
+    padding-left: 15px;
+    font-size: 15px;
+    padding-right: 15px;
+    color: rgba(255, 255, 255, 0.7);
+
+} 
+
+.card-icon {
+   
+    height: 80px;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    
+ 
+}
+
+
+
+
+/* accordian /section2 / breakpont 1 */
+
+
+
+
+
+
+.accordian {
+    position: relative;
+    bottom: 270px;
+    width: 93%;
+}
+
+.label {
+   padding: 5px 15px;
+}
+
+
+
+
+
+/* quick links  / breakpoint 1*/
+
+
+.quick-links{
+width: 90%;
+position: relative;
+top: 150px;
+}
+
+.footer-dropdown{
+  
+    width: 120px;
+    height: 37px;
+}
+
+}
+
+
+
+
+
+
+
+
+/* 2nd breakpoint  */
+
+
+@media only screen and (max-device-width:680px) {
+
+
+/* hero section / first section responsivness / breakpoint  2 */
+    .navbar {
+        width: 98%;
+        left: 1%;
+    }
+
+    #logo {
+        width: 112px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .central-container {
+
+        position: absolute;
+        top: 167px;
+        
+    }
+
+    .central-components {
+
+        height: 150px;
+        width: 80%;
+    }
+
+
+    #main-heading {
+        font-size: 35px;
+    }
+
+
+    #sub-heading {
+        font-size: 15px;
+    }
+
+    #discription {
+        font-size: 15px;
+    }
+
+    .sub-container-input {
+
+        height: 130px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #email-input {
+        width: 80%;
+    }
+
+
+
+
+
+/* above code is for hero section  / section 1  / breakpoint 2*/
+
+/* below code is for section2   / breakpoint 2*/
+
+/* dropdowns */
+#dropdown-container {
+    width: 95%;
+}
+
+
+
+/* carousal of section2  listing top 10 movies / breakpoint 2*/
+.carousal-container {
+
+    max-width:95%;
+}
+
+
+/* carousal btns / breakpoint 2 */
+
+.carousal-btn-container {
+        width: 60px;
+        padding: 10px;
+    }
+
+    .sub-carousal-btn-container {
+        width: 50%;
+    }
+
+
+    /* section 2 cards / reasons to join netflix  / breakpoint 2*/
+
+.card-container {   
+    width: 95%;
+    top: -380px;
+}
+
+
+.card-sub-container {
+    height: fit-content;
+    display: grid;
+    grid-template-columns: auto ;
+
+}
+.cards {
+    height: 85%;
+}
+
+.cards-heading {
+    padding-top: 10px;
+    padding-left: 15px;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+.card-icon {
+  height:fit-content;
+  padding-bottom: 35px;
+}
+ 
+#card-heading{
+    font-size: 20px;
+}
+
+
+
+
+/* accordian /section2 / breakpont 2 */
+
+
+
+
+
+
+.accordian {
+    position: relative;
+    top: 200px;
+    width: 98%;
+}
+
+
+
+
+/* quick links  / breakpoint 2*/
+
+
+.quick-links{
+    width: 95%;
+    position: relative;
+    top: 620px;
+    }
+
+
+
+
+    .dark-background {
+        position: absolute;
+    
+        background-color: black;
+        height: 2560px;
+     
+    
+    }
+}
